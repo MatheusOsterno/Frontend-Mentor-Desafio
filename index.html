@@ -8,6 +8,9 @@
   
   <title>Frontend Mentor | E-commerce product page</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Silkscreen:wght@400;700&display=swap');
+  </style>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -18,18 +21,28 @@
 <body>
   <header>
     <nav>
-    <a class="logo" href="/">SNEAKERS</a>
-    <ul class="nav-list" >
-      <li><a href="/">Collections</a></li>
-      <li><a href="/">Men</a></li>
-      <li><a href="/">Women</a></li>
-      <li><a href="/">About</a></li>
-    </ul>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <a class="logo" href="/">sneakers</a>
+      <ul class="nav-list">
+        <a class="logo2" href="/" >sneakers</a>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div>
+        <img src="./images/icon-cart.svg" alt="carrinho" class="carrinho">
+        <img src="./images/image-avatar.png" alt="avatar" class="avatar">
+      </div>
     </nav>
   </header>
   <main></main>
-
-  
+  <script src="mobile-navbar.js"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Matheus Osterno</a>.
