@@ -12,7 +12,7 @@
 
   .logo {
     font-size: 35px;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     font-weight: bold;
     align-items: center;
     display: none;
@@ -21,7 +21,7 @@
   
   .logo2 {
     font-size: 35px;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     font-weight: bold;
     align-items: center;
     font-family: Kumbh Sans;
@@ -34,9 +34,8 @@
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #ffffff;
     height: 8vh;
-    border-bottom: hsl(220, 14%, 75%) 3px solid;
+    border-bottom: hsl(220, 14%, 75%) 1px solid;
   }
-  
   
   .nav-list {
     list-style: none;
@@ -50,7 +49,6 @@
   }
   .nav-list li a:hover{
     border-bottom: hsl(26, 100%, 55%) 3px solid;
-   
   }
   
   .mobile-menu {
@@ -74,6 +72,10 @@
   .carrinho {
     height: 30px;
     align-items: center;
+  }
+
+  .carrinho:hover {
+    box-sizing: content-box;
   }
   
 

@@ -8,6 +8,8 @@
   
   <title>Frontend Mentor | E-commerce product page</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-main.css">
+  <link href="./css/lightbox.min.css" rel="stylesheet" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Silkscreen:wght@400;700&display=swap');
   </style>
@@ -19,7 +21,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header> <!-- Inicio Header-->
     <nav>
       <div class="mobile-menu">
         <div class="line1"></div>
@@ -40,12 +42,38 @@
         <img src="./images/image-avatar.png" alt="avatar" class="avatar">
       </div>
     </nav>
-  </header>
-  <main></main>
-  <script src="mobile-navbar.js"></script>
+  </header><!-- Fim Header-->
+  <main>
+    <div class="row">
+      <div class="col-2">
+        <a href="images/image-product-1.jpg" data-lightbox="models" data-title="SNEAKERS"><img src="images/image-product-1.jpg" alt="sneakers" class="controller"></a>
+        <a href="images/image-product-1.jpg" data-lightbox="models" data-title="SNEAKERS"><img src="images/image-product-1-thumbnail.jpg" alt="sneakers" class="ajuste"></a>
+        <a href="images/image-product-2.jpg" data-lightbox="models" data-title="SNEAKERS"><img src="images/image-product-2-thumbnail.jpg" alt="sneakers" class="ajuste"></a>
+        <a href="images/image-product-3.jpg" data-lightbox="models" data-title="SNEAKERS"><img src="images/image-product-3-thumbnail.jpg" alt="sneakers" class="ajuste"></a>
+        <a href="images/image-product-4.jpg" data-lightbox="models" data-title="SNEAKERS"><img src="images/image-product-4-thumbnail.jpg" alt="sneakers" class="ajuste"></a>
+      </div>
+      <div class="col-1">
+        <p>SNEAKER COMPANY</p>
+        <h2>Fall limited Edition<br>Sneakers</h2>
+        <h5>These low-profile are you perfect casual wear <br>companion. Featuring a durable rubber outer sale, they`ll <br>withsland everything the wather can offer</h5>
+        <h4>R$125,00<span>50%</span></h4> 
+        <h3><s>R$250,00</s></h3>
+          <div class="quantidade">
+          <h3><button class="menos">-</button> 0 <button class="mais">+</button></h3>
+          </div>
+          <button type="button"><img src="./images/icon-cart.svg" alt="carrinho" class="carrinhobtn">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+  </main>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Matheus Osterno</a>.
   </div>
+  <script src="mobile-navbar.js"></script>
+  <script src="./js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
