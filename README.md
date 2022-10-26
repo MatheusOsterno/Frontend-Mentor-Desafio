@@ -1,5 +1,6 @@
 Lista de Tarefas
 - (x) Fazer Header com responsividade 
+- (x) Desenvolver o Dialog
 
 # Frontend Mentor - E-commerce product page
 
