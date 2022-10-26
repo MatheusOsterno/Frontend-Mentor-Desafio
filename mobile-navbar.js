@@ -42,3 +42,15 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+  const carrinho = document.querySelector(".carrinho")
+  const modal = document.querySelector("dialog")
+  const buttonClose = document.querySelector("dialog button")
+
+  carrinho.onclick = function() {
+    modal.showModal()
+  }
+
+  buttonClose.onclick = function () {
+    modal.close()
+  }
