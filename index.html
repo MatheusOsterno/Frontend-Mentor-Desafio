@@ -3,24 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | E-commerce product page</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style-main.css">
   <link href="./css/lightbox.min.css" rel="stylesheet" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Silkscreen:wght@400;700&display=swap');
-  </style>
-
+  <style> @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Silkscreen:wght@400;700&display=swap');</style>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body id="app">
   <header> <!-- Inicio Header-->
     <nav>
       <div class="mobile-menu">
@@ -40,9 +36,22 @@
       <div>
         <img src="./images/icon-cart.svg" alt="carrinho" class="carrinho">
         <dialog>
-          <h2>Carrinho</h2>
-          <p>Pronduto x Quantidade = Total</p>
-          <button>Volta para as compras</button>
+          <h1 class="boxDialog">Carrinho</h1>
+          <hr>
+          <br>
+          <div v-if="products[0].quantity >= 1">
+        
+          <p  class="produtoDialog"><img src="./images/image-product-1-thumbnail.jpg" alt="">
+            <p>Fall limited EditionSneakers</p>
+            <h2>{{ products[0].quantity }} x R${{  (products[0].price).toFixed(2)}}</h2></p>
+            <h3>TOTAL: R${{(products[0].quantity * products[0].price).toFixed(2) }}</h3>
+          <br>
+          </div>
+          <div v-else> <p> Carrinho vazio </p></div>
+
+          <hr>
+          <br>
+          <button class="butaoDialog"> Volta para as compras </button>
         </dialog>
         <img src="./images/image-avatar.png" alt="avatar" class="avatar">
       </div>
@@ -63,10 +72,10 @@
         <h5>These low-profile are you perfect casual wear <br>companion. Featuring a durable rubber outer sale, they`ll <br>withsland everything the wather can offer</h5>
         <h4>R$125,00<span>50%</span></h4> 
         <h3><s>R$250,00</s></h3>
-          <div class="quantidade">
-          <h3><button class="menos">-</button> 0 <button class="mais">+</button></h3>
-          </div>
-          <button type="button"><img src="./images/icon-cart.svg" alt="carrinho" class="carrinhobtn">Add to cart</button>
+        <div class="resultado">
+          <button class="menos" @click="products[0].quantity--" :disabled="products[0].quantity <= 0">-</button><h3>{{ products[0].quantity }}</h3><button class="mais" @click="products[0].quantity++">+</button></h3>
+          <a href="#" class="myButton">add cart</a>
+        </div>
         </div>
       </div>
     </div>
@@ -78,8 +87,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Matheus Osterno</a>.
   </div>
-
-  <script src="mobile-navbar.js"></script>
-  <script src="./js/lightbox-plus-jquery.min.js"></script>
 </body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="script.js"></script>
+<script src="mobile-navbar.js"></script>
+<script src="./js/lightbox-plus-jquery.min.js"></script>
 </html>

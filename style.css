@@ -11,17 +11,6 @@
     transition: 0.3s;
   }
 
-  dialog::backdrop {
-    background-color: rgb(0, 0, 0 / 0.5);
-  }
-  dialog {
-    margin: 10px;
-    padding: 10px;
-    margin: auto;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 1em rgb(0, 0, 0 / 0.3);
-  }
 
   img {
     cursor: pointer;
@@ -66,7 +55,7 @@
     margin-left: 32px;
   }
   .nav-list li a:hover{
-    border-bottom: hsl(26, 100%, 55%) 3px solid;
+    border-bottom:  3px solid;
   }
   
   .mobile-menu {
@@ -101,18 +90,32 @@
     body {
       overflow-x: hidden;
     }
+    .row{
+      flex-direction: column;
+      align-items: center;
+    }
+    .col-1{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    
     .nav-list {
       z-index: 1;
       margin-top: 5px;
       position: absolute;
       top: 8vh;
       left: 0;
-      width: 50vw;
-      height: 92vh;
+      border: 5px solid hsl(26, 100%, 55%);
+      box-shadow: 5px 5px 5px hsl(26, 100%, 85%);
+      width: 30vh;
+      height: 45vh;
       background: #ffffff;
       flex-direction: column;
       align-items: center;
       transform: translateX(-100%);
+      border-radius: 20px;
       transition: transform 0.3s ease-in;
     }
     .nav-list li {
@@ -162,3 +165,31 @@
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+
+  /************ Dialog ****************/
+  
+  dialog::backdrop {
+    background-color: rgb(0, 0, 0 / 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  dialog {
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgb(0, 0, 0 / 0.3);
+  }
+  
+  .butaoDialog {
+    margin: auto;
+  }
+  
+  

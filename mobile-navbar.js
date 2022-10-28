@@ -54,3 +54,6 @@ class MobileNavbar {
   buttonClose.onclick = function () {
     modal.close()
   }
+  /****************************** codigo teste *************/
+
+  

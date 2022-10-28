@@ -2,11 +2,11 @@
 .row{
     display: flex;
     justify-content: center;
-    margin: 100px 0;
+    margin: 10px 0;
 }
 
 .col-1{
-    flex-basis: 40%;
+    
     position: relative;
     margin-left: 50px;
 }
@@ -15,7 +15,6 @@
     font-size: 54px;
 }
 .col-1 h3 {
-    margin-top: 0;
     font-size: 20px;
     color: #707070;
     font-weight: 100;
@@ -40,21 +39,39 @@
 
 button{
     display: flex;
-    box-shadow: 5px 10px 18px hsl(26, 100%, 85%);
     width: 100px;
     border: 0;
     padding: 12px 10px;
-    outline: none;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
     color: #fff;
     background-color: hsl(26, 100%, 55%);
 }
+button:hover{
+    box-shadow: 5px 5px 5px hsl(26, 100%, 85%);
+}
 .carrinhobtn{
+    margin: 0;
+    padding: 0;
     display: inline-block;
     align-items: center;
     height: 20px;
+}
+
+.addCarrinho{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 170px;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.addCarrinhoBtn {
+    display: flex;
+    
 }
 
 h3 button {
@@ -66,15 +83,16 @@ h3 button {
     width: 100px;
 }
 
-.quantidade {
-    flex-basis: 30%;
-    position: relative;
-    background: hsl(220, 14%, 90%);
+.resultado {
+    display: flex;
     border-radius: 10px;
+    width: 350px;
+    align-items: baseline;
+    justify-content: center;
 }
 
 .controller{
-    width: 575px;
+    width: 580px;
     display: flex;
     position: relative;
     align-items: center;
@@ -83,6 +101,8 @@ h3 button {
 }
 span {
     justify-content: space-around;
+    align-content: center;
+    align-items: center;
     text-align: center;
     padding: 5px;
     margin:0 10px;
@@ -94,7 +114,6 @@ span {
 }
 
 img{
-
     margin: 11px;
     border-radius: 20px;
 }
@@ -102,3 +121,47 @@ img{
 .ajuste{
     height: 125px;
 }
+
+.menos {
+    display: flex;
+    margin: 15px;
+    width: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.mais {
+    display: flex;
+    width: 70px;
+    margin: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background-color:hsl(26, 100%, 45%);
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 20px;
+	font-weight:bold;
+	padding:10px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+    box-shadow: 5px 5px 5px hsl(26, 100%, 85%);
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
