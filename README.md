@@ -1,7 +1,7 @@
 # Frontend Mentor - E-commerce product page
 
 <div align="center">
-  <img src="https://media-exp1.licdn.com/dms/image/C4D22AQE4Thig4Tpx5Q/feedshare-shrink_2048_1536/0/1666999891455?e=1669852800&v=beta&t=dn5bQhzDSlrU5MUk---mfXLN3MnsEV8z81UYODWejjM" width="700px">
+  <img src="https://user-images.githubusercontent.com/109709293/199616636-ad8955fc-5721-4030-a17a-abff33075cc2.gif" width="700px">
 </div>
 
 Projeto feito como desafio no site ([https://www.frontendmentor.io](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6))
