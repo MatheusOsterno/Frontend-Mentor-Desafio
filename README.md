@@ -1,5 +1,6 @@
 # Frontend Mentor - E-commerce product page
 
+
 <div align="center">
   <img src="https://user-images.githubusercontent.com/109709293/199616636-ad8955fc-5721-4030-a17a-abff33075cc2.gif" width="700px">
 </div>
